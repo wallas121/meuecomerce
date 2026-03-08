@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="header-content">
+            <div class="logo-area">
+                <div class="logo-icon">M</div>
+                <span class="logo-text">Marketplace</span>
+            </div>
+            <div class="search-area">
+                <div class="search-input-wrapper">
+                    <input type="text" placeholder="Buscar produtos..." class="search-input">
+                    <button class="search-btn">
+                        <i data-lucide="search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="actions-area">
+                <button class="icon-btn"><i data-lucide="heart"></i></button>
+                <button class="icon-btn"><i data-lucide="user"></i></button>
+                <button class="icon-btn"><i data-lucide="shopping-cart"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Promo Banner -->
+        <section class="promo-banner">
+            <div class="promo-content">
+                <div class="promo-text">
+                    <span class="promo-tag">Promoção até 1º de Fevereiro</span>
+                    <h2>até <span>-80%</span></h2>
+                    <p>Liquidação da Estação</p>
+                </div>
+                <div class="promo-app">
+                    <div class="app-card">
+                        <p class="app-label">Baixe o App</p>
+                        <p class="app-name">Marketplace</p>
+                        <p class="app-desc">Descontos exclusivos no app!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="nav-btn prev"><i data-lucide="chevron-left"></i></button>
+            <button class="nav-btn next"><i data-lucide="chevron-right"></i></button>
+        </section>
+
+        <!-- Quick Categories -->
+        <section class="categories-section">
+            <div class="categories-list" id="categories-container">
+                <!-- Categories will be injected by JS -->
+            </div>
+        </section>
+
+        <!-- Products Grid: Recommended -->
+        <section class="products-section">
+            <div class="section-header">
+                <h3>Recomendado para você</h3>
+                <a href="#" class="view-all">Ver tudo <i data-lucide="chevron-right"></i></a>
+            </div>
+            <div class="products-grid" id="recommended-products">
+                <!-- Products will be injected by JS -->
+            </div>
+        </section>
+
+        <!-- Products Grid: Popular -->
+        <section class="products-section">
+            <div class="section-header">
+                <h3>Produtos Populares</h3>
+                <a href="#" class="view-all">Ver tudo <i data-lucide="chevron-right"></i></a>
+            </div>
+            <div class="products-grid" id="popular-products">
+                <!-- Products will be injected by JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Para Compradores</h4>
+                <ul>
+                    <li><a href="#">Como fazer um pedido</a></li>
+                    <li><a href="#">Métodos de Pagamento</a></li>
+                    <li><a href="#">Entrega</a></li>
+                    <li><a href="#">Devoluções</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Parceiros</h4>
+                <ul>
+                    <li><a href="#">Venda conosco</a></li>
+                    <li><a href="#">Afiliados</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Sobre</h4>
+                <ul>
+                    <li><a href="#">Sobre a Empresa</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
